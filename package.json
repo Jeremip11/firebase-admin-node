@@ -15,7 +15,9 @@
     "test:coverage": "nyc npm run test:unit",
     "lint:src": "tslint --format stylish -p tsconfig.json",
     "lint:unit": "tslint -c tslint-test.json --format stylish test/unit/*.ts test/unit/**/*.ts",
-    "lint:integration": "tslint -c tslint-test.json --format stylish test/integration/*.ts"
+    "lint:integration": "tslint -c tslint-test.json --format stylish test/integration/*.ts",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
   },
   "nyc": {
     "extension": [
@@ -56,7 +58,8 @@
     "@types/google-cloud__storage": "^1.1.7",
     "@types/node": "^8.0.53",
     "jsonwebtoken": "8.1.0",
-    "node-forge": "0.7.4"
+    "node-forge": "0.7.4",
+    "snyk": "^1.316.1"
   },
   "devDependencies": {
     "@types/chai": "^3.4.34",
@@ -100,5 +103,6 @@
     "ts-node": "^3.3.0",
     "tslint": "^5.9.0",
     "typescript": "^2.7.2"
-  }
+  },
+  "snyk": true
 }
