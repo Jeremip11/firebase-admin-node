@@ -56,7 +56,7 @@
     "@types/google-cloud__storage": "^1.1.7",
     "@types/node": "^8.0.53",
     "jsonwebtoken": "8.1.0",
-    "node-forge": "0.7.4"
+    "node-forge": "1.0.0"
   },
   "devDependencies": {
     "@types/chai": "^3.4.34",
